@@ -5,17 +5,6 @@ body {
     font-family: 'Satoshi', sans-serif;
     min-width: 200px !important;
 }
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.settings {
-    float: right;
-}
 h1, h2 {
     margin: 0;
 }
@@ -26,7 +15,6 @@ h2 {
     font-size: 1.1rem;
 }
 .lyricfy_body {
-    /* margin: 1rem; */
     text-align: left;
 }
 .input_body {
@@ -36,13 +24,9 @@ h2 {
     color: #000;
     background: #1ed760;
 }
-#musixmatch_img {
-    display: none;
-}
 #lyrics_body {
     margin-top: 20px;
     width: 450px;
-    /*padding: 20px;*/
     border-radius: 5px;
 }
 #show_lyrics {
