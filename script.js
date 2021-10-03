@@ -1,6 +1,6 @@
 var artist, song;
 
-function getArtistAndSong() {
+function getLyrics() {
     artist = document.getElementById("artist").value.replace(/ /g, "%20");
     title = document.getElementById("title").value.replace(/ /g, "%20");;
 
