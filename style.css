@@ -1,0 +1,64 @@
+body {
+    color: #fff;
+    background: #181818;
+    padding: 1rem;
+    font-family: 'Satoshi', sans-serif;
+    min-width: 200px !important;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.settings {
+    float: right;
+}
+h1, h2 {
+    margin: 0;
+}
+h1 {
+    font-size: 1.9rem;
+}
+h2 {
+    font-size: 1.1rem;
+}
+.lyricfy_body {
+    /* margin: 1rem; */
+    text-align: left;
+}
+.input_body {
+    display: inline-grid;
+}
+.btn-success {
+    color: #000;
+    background: #1ed760;
+}
+#musixmatch_img {
+    display: none;
+}
+#lyrics_body {
+    margin-top: 20px;
+    width: 450px;
+    /*padding: 20px;*/
+    border-radius: 5px;
+}
+#show_lyrics {
+    border-color: #1ed760;
+    border-radius: 0 0 5px 5px;
+}
+.form-control {
+    margin-bottom: 1px;
+    border: none;
+}
+#title {
+    border-radius: 0;
+}
+#artist {
+    border-radius: 5px 5px 0 0;
+}
+#show_lyrics:hover {
+    border-color: #218838;
+}
