@@ -1,3 +1,5 @@
+// the code below looks just awful, but I don't know how to make it more elegant
+
 window.addEventListener('load', function() {
     var mediaMax = window.matchMedia('(max-width: 899px)');
     var mediaMin = window.matchMedia('(min-width: 901px)');
