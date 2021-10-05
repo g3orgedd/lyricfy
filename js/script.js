@@ -5,7 +5,7 @@ function getArtistAndSong() {
     title = document.getElementById("title").value.replace(/ /g, "%20");;
 
     strFetch = "https://api.lyrics.ovh/v1/"+artist+"/"+title;
-    console.log(strFetch);
+    //console.log(strFetch);
 
     $.get(strFetch, function(data){
         if (data.error === "No lyrics found") {
