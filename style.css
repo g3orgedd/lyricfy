@@ -11,8 +11,6 @@ body {
     width: 0;
 }
 .lyricfy_body {
-    /* position: relative; */
-    /* z-index: 2; */
     width: 35%;
     margin: 0 auto;
     text-align: center;
@@ -68,29 +66,6 @@ body {
 .lyricfy_lyrics_shown {
     visibility: visible;
 }
-/* .bg_blur_body {
-    position: absolute;
-    z-index: 1;
-    left: -10px;
-    top: -10px;
-    right: -10px;
-    bottom: -10px;
-    background-image: url(cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(25px);
-    height: 100vh;
-    width: 100%;
-} */
-/* body::before {
-    content: '';
-    position: fixed;
-    left: 0; right: 0; 
-    top: 0; bottom: 0; 
-    z-index: -1; 
-    background: url(cover.jpg) center / cover no-repeat;
-    filter: blur(33px); 
-} */
 @media (max-width: 1600px) {
     .lyricfy_body {
         width: 50% !important;
