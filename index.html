@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="style.css">
     
     <script src="script.js"></script>
+    <script src="js/resizeScript.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>lyricfy</title>
 </head>
-<body class="unselectable">
-    <div class="input_body">
-        <input type="text" class="form-control" size="40" id="artist" placeholder="Enter artist name here"> 
-        <input type="text" class="form-control" size="40" id="title" placeholder="Enter song name here">
-        <button type="button" class="btn btn-success" id="show_lyrics" onclick="getLyrics()">Show Lyrics</button>
+<body>
+    <div class="bg_blur_body"></div>
+    <div class="lyricfy_body">
+        <div class="lyricfy_input">
+            <input type="text" class="form-control" id="artist" placeholder="Enter artist name here"> 
+            <input type="text" class="form-control" id="title" placeholder="Enter song name here">
+            <button type="button" class="btn btn-success" id="show_lyrics" onclick="getArtistAndSong()">Show Lyrics</button>
+        </div>
+        <div id="lyricfy_lyrics" class="lyricfy_lyrics_hidden"></div>
     </div>
-    <div id="lyrics_body"></div>
 </body>
 </html>
