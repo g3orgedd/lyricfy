@@ -12,6 +12,7 @@ window.addEventListener('load', function() {
         document.getElementById("show_lyrics").className = "btn btn-success";
     }
 });
+
 window.addEventListener('resize', function() {
     var mediaMax = window.matchMedia('(max-width: 899px)');
     var mediaMin = window.matchMedia('(min-width: 901px)');
