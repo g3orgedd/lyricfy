@@ -3,40 +3,23 @@ body {
     margin: 0;
     color: #fff;
     background: #000;
-    padding: 1rem;
     font-family: 'Satoshi', sans-serif;
-    min-width: 200px !important;
 }
-::-webkit-scrollbar {
-    width: 0;
-}
-.lyricfy_body {
-    width: 35%;
+.lyricfy_container {
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.lyricfy_input {
+.lyricfy_body {
+    max-width: 60%;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 20px;
+    font-size: 1.1rem;
 }
 .btn-success {
     color: #000;
     background: #1ed760;
-}
-#lyricfy_lyrics {
-    margin-top: 20px;
-    border-radius: 5px;
-    border-radius: 15px;
-    background: #181818;
-    padding: 25px 15px;
 }
 #show_lyrics {
     width: 100%;
@@ -56,45 +39,62 @@ body {
 #show_lyrics:hover {
     border-color: #218838;
 }
-::selection {
-    color: #000;
-    background: #1ed760;
-}
 .lyricfy_lyrics_hidden {
     visibility: hidden;
 }
 .lyricfy_lyrics_shown {
+    margin-top: 20px;
+    border-radius: 15px;
+    background: #181818;
+    padding: 25px 15px;
     visibility: visible;
 }
-@media (max-width: 1600px) {
-    .lyricfy_body {
-        width: 50% !important;
+@media (max-width: 1200px) {
+    .lyricfy_container {
+        max-width: 970px;
     }
-    .lyricfy_input {
-        padding-top: 20px !important;
+    .lyricfy_body {
+        max-width: 70%;
+        padding-top: 15px;
+        font-size: 1.15rem;
     }
 }
-@media (max-width: 1280px) {
+@media (max-width: 992px) {
+    .lyricfy_container {
+        max-width: 750px;
+    }
     .lyricfy_body {
-        width: 70% !important;
-    }
-    .lyricfy_input {
-        padding-top: 10px !important;
-    }
-    .lyricfy_lyrics_shown {
-        padding: 20px 15px !important;
-        font-size: 1.2rem !important;
+        max-width: 85%;
+        padding-top: 10px;
+        font-size: 1.2rem;
     }
 }
-@media (max-width: 768px) {
-    .lyricfy_body {
-        width: 100% !important;
-        text-align: left !important;
-    }
-    .lyricfy_input {
-        padding-top: 0 !important;
+@media (max-width: 767px) {
+    .lyricfy_container {
+        max-width: none;
     }
     .lyricfy_lyrics_shown {
-        padding: 15px !important;
+        padding: 15px;
     }
+    .lyricfy_body {
+        max-width: 100%;
+        padding-top: 0;
+        text-align: left;
+        font-size: 1.25rem;
+    }
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+::selection {
+    color: #000;
+    background: #1ed760;
 }
