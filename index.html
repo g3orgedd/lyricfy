@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     
     <script src="js/script.js"></script>
-<!--     <script src="js/resizeScript.js"></script> -->
+    <!-- <script src="js/resizeScript.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Lyricfy</title>
@@ -20,9 +20,9 @@
     <div class="lyricfy_container">
         <div class="lyricfy_body">
             <div class="lyricfy_input">
-                <input type="text" class="form-control" id="artist" placeholder="Enter artist name here"> 
-                <input type="text" class="form-control" id="title" placeholder="Enter song name here">
-                <button type="button" class="btn btn-success" id="show_lyrics" onclick="getArtistAndSong()">Show Lyrics</button>
+                <input type="text" class="form-control" id="artist" placeholder="Artist, e.g. Adele"> 
+                <input type="text" class="form-control" id="title" placeholder="Song, e.g. Skyfall">
+                <button type="button" class="btn btn-success" id="show_lyrics" onclick="showLyrics()">Show Lyrics</button>
             </div>
             <div id="lyricfy_lyrics" class="lyricfy_lyrics_hidden"></div>
         </div>
