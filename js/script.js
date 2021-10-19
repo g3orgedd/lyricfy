@@ -3,7 +3,7 @@ function showLyrics() {
     var title = document.getElementById("title").value.replace(/ /g, "%20");;
 
     strFetch = "https://api.lyrics.ovh/v1/" + artist + "/" + title;
-    console.log(strFetch);
+    //console.log(strFetch);
 
     getLyrics(strFetch);
 }
@@ -23,7 +23,8 @@ function getLyrics(strFetch) {
             if (this.status != 200) {
                 document.getElementById("lyricfy_lyrics").innerHTML = "Oops, something went wrong... No lyrics found.";  
                 changeClassName();
-            } else {
+            } 
+            else {
                 var lyrics = request.response['lyrics'].replace(/Paroles de la chanson\s.*\spar\s.*\r\n/gm, "");
                 
                 document.getElementById("lyricfy_lyrics").innerHTML = lyrics.replace(new RegExp("\n", "g"), "<br class='unselectable'>");              
